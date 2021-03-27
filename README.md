@@ -16,6 +16,8 @@ HTML5, CSS3,SASS, ReactJS
 <h4>Server</h4>
 Node.JS, Express, Mongo DB, Mongoose.
 
+<a href="https://github.com/YordanKrushkov/back-end-properties">Chek it here</a>
+
 <h4>API's</h4>
 Google Map, Google Location, Cloudinary, Gmail
 
