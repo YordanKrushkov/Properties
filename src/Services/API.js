@@ -1,16 +1,16 @@
 //PROPERTIES
-const deleteAPI="http://localhost:4000/properties/delete"
-const updatePropertyURL ='http://localhost:4000/properties/update';
-const deletImg='http://localhost:4000/properties/updateImages';
-const baseUrl='http://localhost:4000/properties/';
+const deleteAPI="https://properties-back-end.herokuapp.com/properties/delete"
+const updatePropertyURL ='https://properties-back-end.herokuapp.com/properties/update';
+const deletImg='https://properties-back-end.herokuapp.com/properties/updateImages';
+const baseUrl='https://properties-back-end.herokuapp.com/properties/';
 //EMAIL
-const sendEmail="http://localhost:4000/api/email"
+const sendEmail="https://properties-back-end.herokuapp.com/api/email"
 //USER
-const loginURL='http://localhost:4000/api/login';
-const registerURL='http://localhost:4000/api/register';
-const getuser='http://localhost:4000/api/getuser'
-const likePriperties='http://localhost:4000/api/likeprop';
-const verify='http://localhost:4000/api/verify';
+const loginURL='https://properties-back-end.herokuapp.com/api/login';
+const registerURL='https://properties-back-end.herokuapp.com/api/register';
+const getuser='https://properties-back-end.herokuapp.com/api/getuser'
+const likePriperties='https://properties-back-end.herokuapp.com/api/likeprop';
+const verify='https://properties-back-end.herokuapp.com/api/verify';
 
 export {
     likePriperties,

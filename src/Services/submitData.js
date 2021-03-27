@@ -3,7 +3,7 @@ import getCookie from './cookies';
 const submitData = async (base64EncodedImage, body, url) => {
     
     try {
-        let result = await fetch(`http://localhost:4000${url}`, {
+        let result = await fetch(`https://properties-back-end.herokuapp.com${url}`, {
             method: "POST",
             body: JSON.stringify({ data: base64EncodedImage, prop: body }),
             headers: {
