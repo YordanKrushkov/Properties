@@ -1,6 +1,6 @@
 <h1>RBS</h1>
 
-<h2>Rent Buy Sell</h2>
+<a href="https://yordankrushkov.github.io/properties/"><h2>Rent Buy Sell</h2></a>
 
 
 <h4>Screenshots</h4>
