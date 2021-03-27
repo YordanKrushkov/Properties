@@ -1,0 +1,91 @@
+@import "./variables.scss";
+
+@mixin inputField {
+    height: 40px;
+    border: 2px solid $mainColor;
+    margin: 10px;
+    width: 80%;
+    max-width: 200px;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+}
+
+@mixin formHeader {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: $mainColor;
+            padding: 0;
+            margin: 0;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            width: 100%;
+            height: 100%;
+            &:hover {
+                cursor: pointer;
+                background-color: darken($mainColor, 3);
+            }
+            &:nth-child(1) {
+                border-top-left-radius: 10px;
+            }
+            &:nth-child(2) {
+                border-top-right-radius: 10px;
+            }
+        }
+    }
+}
+
+@mixin buttons {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: $mainColor;
+    height: 50px;
+    border: none;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background-color: darken($mainColor, 5);
+    }
+}
+
+@mixin MQ($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+@mixin MinQ($arg) {
+    @media screen and (min-width: $arg) {
+        @content;
+    }
+}
+
+@mixin shadows {
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.75);
+}

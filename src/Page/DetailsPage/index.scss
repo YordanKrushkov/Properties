@@ -1,0 +1,90 @@
+@import "../../Desing/variables.scss";
+@import "../../Desing/mixin.scss";
+
+#detailsPage {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+
+    @include MQ(600px) {
+        width: 95%;
+        margin: 20px auto;
+    }
+    #propertyInfo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        @include MQ(600px) {
+        }
+        img {
+            width: 90%;
+            @include MQ(600px) {
+                width: 95%;
+            }
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            max-width: 90%;
+            @include MQ(600px) {
+                max-width: 95%;
+            }
+            ul {
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                padding: 0;
+                margin: 0px;
+                @include MQ(600px) {
+                    height: 30px;
+                }
+                li {
+                    font-size: 20px;
+                    font-weight: 600;
+                    height: 100%;
+                    width: 100%;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    background-color: $mainColor;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: darken($mainColor, 5);
+                    }
+                    @include MQ(600px) {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        } //HEADER
+    } //propertyInfo
+    main {
+        max-width: 30%;
+        width: 100%;
+        @include MQ(600px) {
+            max-width: 35%;
+        }
+    }
+
+    .selectedDetailsMenu {
+        font-size: 20px !important;
+        background-color: white !important;
+        color: black !important;
+    }
+} //END
+
+#mapContainer {
+    margin: 0px;
+    background-color: white;
+    width: 90%;
+    height: 500px;
+    position: relative;
+}
