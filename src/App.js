@@ -19,8 +19,8 @@ function App() {
 
 
   return (
-    <Router basename="/properties/"> 
     <div className="App">
+    <Router basename="/properties/"> 
     <Header/>
     {action&&<Notify/>}
     <Switch>
@@ -37,8 +37,8 @@ function App() {
     <Route path="/:err" component={ErrorPage}/>
     </Switch>
     <Footer/>
-    </div>
     </Router> 
+    </div>
   );
 }
 
