@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <Router basename="/properties/"> 
+    <Router> 
     <div className="App">
     <Header/>
     {action&&<Notify/>}
