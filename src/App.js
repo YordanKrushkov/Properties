@@ -25,9 +25,9 @@ function App() {
     {action&&<Notify/>}
     <Switch>
     <Route exact path="/" component={Body}/>
+    <Route path="/register" component={Register}/>
     <Route path="/login" component={Login}/>
     <Route path="/post" component={SubmitForm}/>
-    <Route path="/register" component={Register}/>
     <Route path="/rent" component={Properties}/>
     <Route path="/sale" component={Properties}/>
     <Route path="/search" component={Properties}/>
